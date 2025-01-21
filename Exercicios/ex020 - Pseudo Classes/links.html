@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: rgb(160, 0, 0);
+            font-weight: bold;
+            text-decoration: none;
+
+        }
+        a:visited{
+            color: rgb(255, 0, 0);
+        }
+
+        a:hover{
+            color: blue;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: yellow;
+        }
+
+        .especial{
+            background-color: aquamarine;
+        }
+
+        .especial::before{
+            content: '❤';
+            color: bisque;
+            text-decoration: none;
+            font-weight: normal;
+        }
+
+        .especial::after{
+            content: '❤';
+            color: bisque;
+            text-decoration: none;
+            font-weight: normal;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.instagram.com/h_junyo7/">Meu instagram</a></li>
+        <li><a class="especial" href="https://www.instagram.com/jane_.sara/"></a>Da jane agora</li>
+        <li><a href="https://www.instagram.com/_schostak/">Do nazip</a></li>
+    </ul>
+</body>
+</html>

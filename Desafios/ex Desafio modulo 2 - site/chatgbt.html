@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curiosidades de Tecnologia</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    
+    <style>:root {
+        --cor-primaria: #2fa866;
+        --cor-secundaria: #c5ebd6;
+        --cor-texto: #063d1e;
+        --cor-branca: #ffffff;
+        --fonte-principal: 'Arial', sans-serif;
+        --fonte-destaque: 'Bebas Neue', cursive;
+    }
+    
+    body {
+        margin: 0;
+        font-family: var(--fonte-principal);
+        background-color: var(--cor-secundaria);
+        color: var(--cor-texto);
+        line-height: 1.6;
+    }
+    
+    header {
+        background-color: var(--cor-primaria);
+        color: var(--cor-branca);
+        text-align: center;
+        padding: 1rem 0;
+    }
+    
+    header h1 {
+        font-family: var(--fonte-destaque);
+        margin: 0;
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+        margin: 1rem 0;
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: var(--cor-branca);
+        padding: 0.5rem 1rem;
+        transition: background-color 0.3s;
+    }
+    
+    nav a:hover {
+        background-color: var(--cor-secundaria);
+        color: var(--cor-primaria);
+    }
+    
+    main {
+        margin: 1rem auto;
+        max-width: 800px;
+        padding: 1rem;
+        background-color: var(--cor-branca);
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    main img.imagem {
+        max-width: 100%;
+        margin: 1rem 0;
+        border-radius: 8px;
+    }
+    
+    footer {
+        background-color: var(--cor-primaria);
+        color: var(--cor-branca);
+        text-align: center;
+        padding: 1rem;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Curiosidades de Tecnologia</h1>
+        <p>Tudo aquilo que você sempre quis saber sobre o mundo Tech, em um único lugar</p>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Notícias</a></li>
+                <li><a href="#">Curiosidades</a></li>
+                <li><a href="#">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h1>História do Mascote do Android</h1>
+            <p>Provavelmente você sabe que o sistema operacional <strong>Android</strong>...</p>
+
+            <h2>A primeira versão</h2>
+            <img class="imagem" src="imagens/dan-droids.png" alt="4 robôs criados por Dan Morrill">
+            <p>Essa primeira versão bizarra até foi batizada...</p>
+
+            <h2>Surge um novo mascote</h2>
+            <img class="imagem" src="imagens/irina-blok.jpg" alt="Ilustradora Russa Irina Blok">
+            <p>A ideia principal da Irina era...</p>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="ano"></span> - Site criado por <a href="https://www.instagram.com/h_junyo7/" target="_blank">Henrique Junyo</a></p>
+    </footer>
+
+    <script>
+        // Atualizar ano dinamicamente
+        document.getElementById('ano').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
