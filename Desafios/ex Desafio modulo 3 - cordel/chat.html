@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+    <style>
+        
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+/* Estilo do Header */
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header > h1 {
+    font-family: "Passion One", serif;
+    font-size: 4em;
+    margin: 0;
+}
+
+header > p {
+    font-family: "Sriracha", serif;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+/* Bloco de texto puro */
+.bloco-texto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    font-family: "Sriracha", serif;
+    font-size: 1.5em;
+    color: black;
+}
+
+/* Bloco com imagem de fundo */
+.bloco-imagem {
+    height: 50vh;
+    background-image: url('imagens/background001.jpg'); /* Atualize com o caminho correto */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Texto sobreposto na imagem */
+.texto-sobreposto {
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente */
+    color: white;
+    padding: 20px;
+    font-family: "Sriracha", serif;
+    font-size: 1.5em;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header > h1 {
+        font-size: 2.5em;
+    }
+
+    .bloco-texto, .texto-sobreposto {
+        font-size: 1.2em;
+        padding: 15px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cordel Moderno</h1>
+        <p>Por <strong>Milton Duarte</strong></p>
+    </header>
+
+    <!-- Primeiro bloco -->
+    <div class="bloco-texto">
+        <p>Estou ficando cansado<br>
+        Da tal tecnologia<br>
+        Só se fala por e-mail<br>
+        Mensagem curta e fria<br>
+        Twitter e Facebook<br>
+        Antes que eu caduque<br>
+        Vou dizer tudo em poesia.</p>
+    </div>
+
+    <!-- Segundo bloco com imagem -->
+    <div class="bloco-imagem">
+        <div class="texto-sobreposto">
+            <p>Não é mais como era antes<br>
+            É tudo abreviado<br>
+            "Você" só tem duas letras<br>
+            O "O" e o "E" foi riscado<br>
+            Para declarar o amor<br>
+            Basta botar uma flor<br>
+            E um coração desenhado.</p>
+        </div>
+    </div>
+</body>
+</html>

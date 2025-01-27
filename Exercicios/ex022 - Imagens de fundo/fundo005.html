@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+
+                            /* como fazer a centralização vertical?
+    Considerando que temos um elemento dentro do outro e queremos centralizar verticalmente o elemento interno, devemos:
+Atribuir uma classificação (id ou class) para ambos os elementos, pai e filho...
+Posteriormente configurar o elemento pai com um "position: relative" e logo após configurar o elemento filho com um "position: absolute".
+No elemento filho, configurar ambas as Propriedades Auxiliares do position usadas nesse caso, left e top, com um valor de 50% - Feito isso, a nossa caixa interna será centralizada verticalmente. 
+É IMPORTANTE DESTACAR: Com essa configuração, o elemento interno realmente será alinhado pelo centro, mas tendo como referência o CANTO SUPERIOR ESQUERDO DA CAIXA FILHO... resultando especificamente no alinhamento desse ponto (canto superior esquerdo da box) e não da caixa como um todo.
+Para resolver isso, devemos mudar a posição do "ponto de alinhamento" da caixa filho para o CENTRO da box. Sendo que por padrão, como já vimos, esse ponto é no canto superior esquerdo. 
+Para transformar o "ponto de alinhamento" de uma caixa (mover a caixa), usamos a Propriedade de Estilo " transform ".
+Utilizando a propriedade transform é possível manipular visualmente um elemento (mover, rotacionar, dimensionar e etc).  */
+        #container{
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+
+            position: relative;
+            height: 96vh;
+            height: 500px;
+            padding: 10px;
+            background-color: purple;
+        }
+
+        #conteudo{
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
