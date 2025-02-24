@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+/* TODAS AS MIDIAS*/
+
+/* Typical Device Breakpoints
+Pequenas telas: até 480px
+Celular: de 481px ate 768px
+Tablet: 769px até 1024px
+Desktop: 1025px até 1200px
+Grandes: acima de 1201px */
+
+@media print{
+    body{
+        font-family: 'Courier New', Courier, monospace;
+        text-shadow: none;
+        color: black;
+        border: 2px solid black;
+    }
+}
+/* NAO PRECISO FAZER CONFIG PARA CELULAR, POIS JA FIZ O MOBILE FIRST */
+/* @media screen and (max-width: 600px) {
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) { 
+} */
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    #phone{display: none;
+    }
+    #print{display: none;
+    }
+    #tablet{display: block;
+    }
+    #tv{ display: none;
+    }
+    #pc{display: none;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px){
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    #phone{display: none;
+    }
+    #print{display: none;
+    }
+    #tablet{display: none;
+    }
+    #tv{ display: none;
+    }
+    #pc{display: block;
+    }
+}
+
+@media screen and (min-width: 1201px){
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    #phone{display: none;
+    }
+    #print{display: none;
+    }
+    #tablet{display: none;
+    }
+    #tv{ display: block;
+    }
+    #pc{display: none;
+    }
+}
